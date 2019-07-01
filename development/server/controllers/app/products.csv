@@ -1,0 +1,6 @@
+_id,userID,name,cost,quantity
+ObjectId(5d178afd639fe92c9de98d16),5d178afd639fe92c9de98d11,Bread,52.12,30
+ObjectId(5d178afd639fe92c9de98d17),5d178afd639fe92c9de98d11,Butter,49,100
+ObjectId(5d178afd639fe92c9de98d18),5d178afd639fe92c9de98d11,Carrot,32.1,56
+ObjectId(5d178afd639fe92c9de98d19),5d178afd639fe92c9de98d11,Milk,10,50
+ObjectId(5d18d7bd65fd5924146f8952),5d178afd639fe92c9de98d11,Monacoo,10.001,40.001
