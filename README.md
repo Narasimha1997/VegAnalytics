@@ -24,3 +24,9 @@ $node index.js
 
 Go to browser, open `http://localhost:5000/` to use the app.
 
+### Future Engancements :
+* Adding more visualizations.
+* Adding customizable visualizations like Salesforce.
+* Support for more data export options (right now only csv is supported)
+* Designing better user interface.
+
