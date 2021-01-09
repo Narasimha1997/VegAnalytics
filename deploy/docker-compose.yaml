@@ -16,7 +16,7 @@ services:
       - app-network
     command: mongod --auth
 
-  chatapp:
+  vegapp:
     build:
       context: ..
       dockerfile: ./deploy/Dockerfile
@@ -25,7 +25,7 @@ services:
     restart: unless-stopped
     env_file: .env
     environment:
-      - MONGO_HOST=mongodb://$MONGO_USERNAME:$MONGO_PASSWORD@db:$MONGO_PORT/$MONGO_DB?authSource=admin
+      - MONGO_HOST=mongodb://$MONGO_USERNAME:$MONGO_PASSWORD@db:$MONGO_PORT
     ports:
       - "3001:${PORT}"
     networks:
