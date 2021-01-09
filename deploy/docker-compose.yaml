@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  db:
+    image: mongo:latest
+    container_name: db
+    hostname: veg-analytics-db
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_PASSWORD
+    volumes:     
+      - dbdata:$HOME/db
+    networks:
+      - app-network
+    command: mongod --auth
+
+  chatapp:
+    build:
+      context: ..
+      dockerfile: ./deploy/Dockerfile
+    image: veg
+    container_name: veg-app
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MONGO_HOST=mongodb://$MONGO_USERNAME:$MONGO_PASSWORD@db:$MONGO_PORT/$MONGO_DB?authSource=admin
+    ports:
+      - "3001:${PORT}"
+    networks:
+      - app-network  
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  dbdata: 

@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const Database = require('./config/db').Database
 const router = require('./config/routes').router
 
 const app = express()
