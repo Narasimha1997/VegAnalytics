@@ -58,10 +58,10 @@ npx nativefier http://localhost:9000       #or any other host as you wish
 ```
 
 ### Screenshots:
-![login](attachment:./screens/im1.png)
-![status](atattachment:./screens/im2.png)
-![Products](atattachment:./screens/im3.png)
-![Transactions](atattachment:./screens/im4.png)
-![Viz1](atattachment:./screens/im5.png)
-![Viz2](atattachment:./screens/im6.png)
-![Viz3](atattachment:./screens/im7.png)
+![login](/screens/im1.png)
+![status](/screens/im2.png)
+![Products](/screens/im3.png)
+![Transactions](/screens/im4.png)
+![Viz1](/screens/im5.png)
+![Viz2](/screens/im6.png)
+![Viz3](/screens/im7.png)
